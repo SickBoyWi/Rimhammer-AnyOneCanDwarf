@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Rimhammer - The End Times - Dwarfs</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationRemove">
+					<xpath>//AlienRace.ThingDef_AlienRace[defName = "RH_TET_Dwarf_Race_Standard"]/alienRace/raceRestriction/recipeList</xpath>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>//AlienRace.ThingDef_AlienRace[defName = "RH_TET_Dwarf_Slayer_Race_Standard"]/alienRace/raceRestriction/recipeList</xpath>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+	
+</Patch>
